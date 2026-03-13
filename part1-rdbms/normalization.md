@@ -19,11 +19,12 @@ IssueIf Priya cancels these two specific orders and we delete these rows from th
 
 ## Normalization Justification
 
-Keeping everything in one flat table might seem "simpler" at first glance, but as the data grows, it becomes a liability. Using the examples above, we can see that a flat structure forces us to repeat the same information (like office addresses and customer emails) over and over again. This not only wastes storage space but, more importantly, leads to human error.
-
-By normalizing this data into Third Normal Form (3NF), we create separate "Master Tables" for Customers, Products, and Sales Reps. This means:
-1.  Integrity A Sales Rep's address is stored in exactly one place. An update there reflects everywhere.
-2.  Flexibility: We can add new products to our catalog (P009) even if they haven't been sold yet.
-3.  Safety: Deleting a transaction (an order) does not result in the permanent loss of a customer's profile.
-
-Normalization is not "over-engineering"; it is the transition from a simple spreadsheet to a professional, reliable database system that a business can actually trust.
+Keeping everything in one flat table might seem "simpler" at first glance, but as the data grows, it becomes a Confusing.
+My manager recently suggested that keeping everything in one big table is "simpler" and that normalizing the data is just "over-engineering." While I understand the desire for simplicity, using a single table for a growing business is like building a house without a foundation—it might look fine at first, but it will eventually collapse.
+Based on the examples in our dataset, a flat structure is actually more complex to maintain. It forces us to repeat the same information (like office addresses and customer emails) thousands of times. This isn't just a waste of space; it’s a recipe for human error. As we saw with the "Nariman Point" inconsistency, even a small typo can make our reports unreliable.
+Normalization isn't about making things complicated; it's about organization. By splitting the data into 3rd Normal Form (3NF), we give Customers, Products, and Sales Reps their own dedicated "homes." 
+This means:
+1)We can add new products to our catalog before they sell.
+2)We can update a staff member's email in one single place.
+3)We can delete old orders without losing our valuable customer contact list.
+In short, normalization turns a messy spreadsheet into a professional database that provides a "single version of truth" for the entire company.
