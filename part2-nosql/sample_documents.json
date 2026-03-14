@@ -1,0 +1,37 @@
+[
+  {
+    "product_id": "E101",
+    "name": "Ultra-Wide Monitor",
+    "category": "Electronics",
+    "price": 35000,
+    "specs": {
+      "warranty": "2 Years",
+      "voltage": "110V-240V",
+      "resolution": "3440 x 1440"
+    },
+    "tags": ["gaming", "productivity", "4k"]
+  },
+  {
+    "product_id": "C202",
+    "name": "Classic Denim Jacket",
+    "category": "Clothing",
+    "price": 4500,
+    "details": {
+      "material": "100% Organic Cotton",
+      "sizes": ["S", "M", "L", "XL"],
+      "color": "Indigo"
+    }
+  },
+  {
+    "product_id": "G303",
+    "name": "Greek Yogurt",
+    "category": "Groceries",
+    "price": 150,
+    "expiry_date": "2024-11-15",
+    "nutritional_info": {
+      "calories": 120,
+      "protein": "10g",
+      "fat": "2g"
+    }
+  }
+]
